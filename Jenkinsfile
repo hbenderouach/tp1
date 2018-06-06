@@ -6,7 +6,7 @@ pipeline {
    stages {
        stage('Checkout Git') {
            steps {
-             git branch: 'master', credentialsId: 'GIT_HAMZA', url: 'https://github.com/hbenderouach/tp1.git'
+             git branch: 'master', credentialsId: 'GIT_HAMZA', url: 'https://github.com/hbenderouach/JenkinsAEM.git'
            }
        }
        stage('Build') {
