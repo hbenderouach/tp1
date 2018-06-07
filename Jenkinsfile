@@ -1,5 +1,10 @@
 pipeline {
    agent any
+   
+    triggers {
+        cron('29 12 * * *')
+    }
+   
    tools {
        maven 'maven-3-5-3'
    }
@@ -13,12 +18,6 @@ pipeline {
            steps {
                bat 'mvn clean install'
            }
-       }
-       
+       }   
    }
-   
-   triggers {
-    cron('21 12 * * *')
-}
-
 }
