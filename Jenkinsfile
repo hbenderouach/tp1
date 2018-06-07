@@ -16,4 +16,9 @@ pipeline {
        }
        
    }
+   
+   triggers {
+    ...
+    cron('15 12 * * *')
+}
 }
